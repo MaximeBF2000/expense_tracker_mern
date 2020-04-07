@@ -1,0 +1,46 @@
+@import "./config.scss";
+
+.add_transaction{
+  width: $container-width;
+  margin-bottom: 1rem;
+
+  input{
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    height: 2em;
+    margin-bottom: .5rem;
+    transition: .3s;
+    outline: none;
+    font-size: large;
+
+    &::placeholder{
+      transition: .3s;
+    }
+
+    &:focus{
+      border-bottom: 1px solid #599ec9;
+
+      &::placeholder{
+        color: #599ec9;
+      }
+    }
+  }
+
+  input[type="text"]{
+    width: 80%;
+  }
+  input[type="number"]{
+    width: calc(20% - 2px);
+    margin-left: 2px;
+  }
+  button[type="submit"]{
+    all: unset;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    background-color: #aaa;
+    padding: .5rem 0;
+    border-radius: .25rem;
+  }
+}

@@ -1,0 +1,72 @@
+@import "./config.scss";
+
+.h3_transaction{
+  margin-bottom: 1rem;
+}
+
+.transactions{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  width: 100%;
+
+  .transaction{
+    margin-bottom: 1rem;
+    background-color: #ccc;
+    border-radius: .25rem;
+    overflow: hidden;
+  }
+
+  .income, .expense{
+    display: grid;
+    grid-template-columns: 1fr 6fr 1.5fr;
+
+    .grid_el{
+      @extend .center;
+    }
+
+    .delete{
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .name, .amount{
+      padding: .5rem 0;
+    }
+    .name{
+      padding-left: 1rem;
+    }
+  }
+  .income{
+    .amount::after{
+      background-color: #21a021;
+    }
+    .delete{
+      background-color: #21a021;
+    }
+  }
+  .expense{
+    .amount::after{
+      background-color: darkred;
+    }
+    .delete{
+      background-color: darkred;
+    }
+  }
+
+
+  .amount{
+    position: relative;
+    transform: translateX(-8px);
+
+    &::after{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(100% + 5px);
+      width: 3px;
+      height: 100%;
+      background-color: blue;
+    }
+  }
+}

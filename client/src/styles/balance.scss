@@ -1,0 +1,25 @@
+@import "./config.scss";
+
+.balance{
+  width: 100%;
+  display: flex;
+  border-radius: .25rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
+
+  .center{
+    width: 50%;
+    padding: .5rem 0;
+
+    h3{
+      margin-bottom: .3rem;
+    }
+  }
+
+  .income{
+    background-color: rgba(#38a138, .7);
+  }
+  .expense{
+    background-color: rgba(#ca3838, .7);
+  }
+}

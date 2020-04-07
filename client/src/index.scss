@@ -1,1 +1,16 @@
 @import "./styles/config.scss";
+
+
+.ET_container{
+  width: $container-width;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  margin: 2rem 0;
+}
+
+@import "./styles/total.scss";
+@import "./styles/balance.scss";
+@import "./styles/transactions.scss";
+@import "./styles/addTransaction.scss";
