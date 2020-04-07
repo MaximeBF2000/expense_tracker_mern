@@ -1,22 +1,19 @@
-# MERNstack application boilderplate
+# Expense tracker using the MERNstack
 
-## Scripts :
-- client : run react application
-- server : run node server
-- dev : run server on port 9000 and react app on port 3000
+## App usage
 
-## How to use ?
-- Git clone the repository
-- Run npm install
-- Go to client folder and run npm install
-- add a .env file with a var MONGO_URI set to your mongoDB connect string
-- Run npm dev to start your work
+Track your income and expenses on a daily basis
+
+## Actual functionnalities
+- Add a transaction (positive or negative)
+- See the total amount of money it returns
+- See the total number of incomes
+- See the total number of expenses
+- Remove a transaction
+- Instant interface updates
 
 
-## Specialities
-
-- Usage of SASS
-- Style folder for SASS modules with config.scss
-- No service workers
-- Additionnal presinstalled packages : uuid, react-router-dom
-- Proxy setup for react app (client requests will point to the server port)
+## Upcoming features
+- Transactions saved to a database
+- Filter by date
+- Mobile version
