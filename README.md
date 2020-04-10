@@ -10,10 +10,10 @@ Track your income and expenses on a daily basis
 - See the total number of incomes
 - See the total number of expenses
 - Remove a transaction
+- Everything stocked in database
 - Instant interface updates
 
 
 ## Upcoming features
-- Transactions saved to a database
 - Filter by date
 - Mobile version
