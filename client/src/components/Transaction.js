@@ -6,7 +6,7 @@ export default function Transaction({ transaction }) {
   const sign = transaction.amount > 0 ? "+" : "-"
 
   const handleDelete = () => {
-    deleteTransaction(transaction.id)
+    deleteTransaction(transaction._id)
   }
 
   return (

@@ -1,6 +1,30 @@
 @import "./styles/config.scss";
 
+html, body, #root{
+  width: 100%;
+  height: 100%;
+}
 
+::-webkit-scrollbar{
+  width: 7px;
+  height: 100%;
+  background-color:#303030;
+}
+::-webkit-scrollbar-thumb{
+  background-color: #999;
+}
+
+h1{
+  color: #fff;
+}
+body{
+  background-color: $primary; 
+}
+.spinner{
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
 .ET_container{
   width: $container-width;
   margin: 0 auto;
@@ -10,7 +34,20 @@ h1{
   margin: 2rem 0;
 }
 
+@import "./styles/login.scss";
 @import "./styles/total.scss";
 @import "./styles/balance.scss";
 @import "./styles/transactions.scss";
 @import "./styles/addTransaction.scss";
+
+
+@media (max-width: 500px){
+  body{
+    width: 100%;
+    height: 100%;
+    padding: 2rem 1rem;
+  }
+  .ET_container{
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+@import "./config.scss";
+
+.login_container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .login_box{
+    width: 25%;
+    height: 80%;
+    background-color: #fff;
+    padding: 2rem 1rem;
+  }
+
+  .subtitle{
+    font-size: small;
+    text-align: center;
+    color: rgba(#000, .7);
+    margin: .5rem;
+    margin-bottom: 2rem;
+  }
+
+  form{
+    @extend .container;
+  }
+
+  .input{
+    margin-top: 2rem;
+    color: #000;
+  }
+
+  .loginBtn{
+    all: unset;
+    margin-top: 2rem;
+    padding: .4rem 3rem;
+    cursor: pointer;
+    background-color: $secondary;
+    color: #fff;
+    border-radius: .2rem;
+  }
+}

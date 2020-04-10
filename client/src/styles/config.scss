@@ -1,5 +1,9 @@
 $ff: sans-serif;
 $container-width: 450px;
+$primary: #6a54e7;
+$secondary: #599ec9;
+// $grey: #babec9;
+$grey: #f3f3f3;
 
 *{
   margin: 0;
@@ -23,4 +27,48 @@ $container-width: 450px;
 
 ul{
   list-style: none;
+}
+
+.input-group{
+  position: relative;
+}
+.label{
+  pointer-events: none;
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  color: lightgrey;
+  font-size: large;
+  transition: .3s;
+}
+.input{
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid lightgrey;
+  height: 2em;
+  margin-bottom: .5rem;
+  transition: .3s;
+  outline: none;
+  font-size: large;
+  background-color: inherit;
+  color: lightgrey;
+
+  &::placeholder{
+    color: lightgrey;
+    transition: .3s;
+  }
+
+  &:focus, &:not([value=""]){
+    border-bottom: 1px solid #599ec9;
+
+    &::placeholder{
+      color: #599ec9;
+      transform: translateY(-100%);
+    }
+
+    &+label{
+      color: #599ec9;
+      transform: translate(-5px, -100%) scale(.75);
+    }
+  }
 }

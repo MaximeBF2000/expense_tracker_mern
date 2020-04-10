@@ -1,7 +1,15 @@
 @import "./config.scss";
 
 .h3_transaction{
+  margin-bottom: .3rem;
+  color: #fff;
+}
+hr{
   margin-bottom: 1rem;
+  border: none;
+  width: 100%;
+  height: .5px;
+  background-color: #999;
 }
 
 .transactions{
@@ -12,7 +20,7 @@
 
   .transaction{
     margin-bottom: 1rem;
-    background-color: #ccc;
+    background-color: $grey;
     border-radius: .25rem;
     overflow: hidden;
   }
@@ -37,36 +45,18 @@
       padding-left: 1rem;
     }
   }
-  .income{
-    .amount::after{
-      background-color: #21a021;
-    }
-    .delete{
-      background-color: #21a021;
-    }
+.income{
+  .delete{
+    background-color: #21a021;
   }
-  .expense{
-    .amount::after{
-      background-color: darkred;
-    }
-    .delete{
-      background-color: darkred;
-    }
+}
+.expense{
+  .delete{
+    background-color: darkred;
   }
-
-
+}
   .amount{
     position: relative;
     transform: translateX(-8px);
-
-    &::after{
-      content: "";
-      position: absolute;
-      top: 0;
-      left: calc(100% + 5px);
-      width: 3px;
-      height: 100%;
-      background-color: blue;
-    }
   }
 }

@@ -5,7 +5,7 @@ export default function Total() {
   const { transactions } = useContext(GlobalContext)
 
   const amounts = transactions.map(el => el.amount)
-  const total = amounts.length > 0 ? amounts.reduce((a, c) => a + c) : 0
+  const total = amounts.length > 0 ? amounts.reduce((a, c) => (a + c), 0) : 0
 
   return (
     <div className="total">
